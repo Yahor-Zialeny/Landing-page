@@ -1,0 +1,158 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.container{
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr 4fr;
+}
+.menu{
+    margin-top: 50px;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+}
+.navhref{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 1.25em;
+}
+.logo{
+    width:120px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.header{
+    background: #FAD401;
+    background-size: 1600px;
+    height: 127px;
+    border: solid;
+    border-width: 7px;
+    border-radius: 1em;
+}
+.navhref:hover{
+    color: black;
+}
+.nav-item:hover > .subnav{
+    display: block;
+}
+.nav-item{
+    cursor: default;
+}
+.subnav{
+    list-style-type: none;
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15px;
+}
+.subnav-link{
+    display: block;
+    padding: 8px 16px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+.subnav-link:hover{
+   text-decoration: underline;
+   text-decoration-color: black ;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.75fr;
+    border: solid;
+    border-width: 7px;
+    border-radius: 1em;
+    background:#FAD401;
+}
+.column2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#more1, #more2, #more3{
+    display: none;
+}
+.img{
+    border: solid;
+    border-radius: 0.5em;
+    border-color: black;
+    border-width: 4px;
+}
+.report{
+    border: solid;
+    border-radius: 0.5em;
+    border-color: black;
+    border-width: 4px;
+    padding: 12px;
+}
+.container31{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.column3{
+    margin-left: 50px;
+}
+#button1:hover, #button2:hover, #button3:hover{
+    text-decoration-line: underline;
+}
+#button1, #button2, #button3{
+    float: right;
+    border-radius: 0.5em;
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+}
+.search{
+    margin-top: 150px;
+}
+.search input{
+    width: 200px;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid black;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background: white;
+    color: black;
+}
+.search button{
+    position: absolute; 
+    width: 42px;
+    height: 48px;
+    border: none;
+    background: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.footer{
+    background:#FAD401;
+    border-radius: 1em;
+    border: solid;
+    text-align: center;
+    border-color: black;
+    border-width: 7px;
+}
+.connect{
+    display: grid;
+    grid-template-columns: 11fr 1fr 1fr 11fr;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .container{
+        display: inline-grid;
+        grid-template-columns: 1fr 2fr 4fr;
+    }
+}
